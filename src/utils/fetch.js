@@ -8,7 +8,6 @@ const fetchData = (url) => {
         (xhttp.status === 200)
         ? resolve(JSON.parse(xhttp.responseText))
         : reject(new Error(`Data not found: ${url}`))
-        // : reject(new Error('Error', url))
       }
     }
     xhttp.open('GET', url, true)
